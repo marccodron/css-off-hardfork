@@ -32,5 +32,198 @@ button {
 
 /* ... Your turn! ... */
 
+nav {
+  background-color: var(--green);
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  height: 10vh;
+  align-items: center;
+  margin-top: auto;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header{
+  height: 150vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color:var(--orange);
+  text-shadow: 0.1rem 0.1rem white;
+  background-image: url("/img/blue-splash.png");
+  background-position: top;
+  margin-top: -6rem;
+  background-size: cover;
+}
+
+header h1{
+  font-size: 7rem;
+  margin-bottom: 0;
+}
+
+header p {
+  font-size:2rem;
+  margin-top: 0;
+}
+
+
+
+
+.obstacles{
+  background-color: var(--orange);
+  border-top: 0.75rem solid rgba(0,0,0,0.1);
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.1);
+}
+
+main h2{
+  text-align:center;
+  font-size: 4rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+  padding:2rem;
+}
+
+main section:first-child article {
+  background-color:var(--green);
+  text-align: center;
+  width:25rem;
+  margin:auto;
+  border-radius: 2rem;
+}
+
+.obstacle-title a{
+  color:white;
+  text-decoration: none;
+}
+
+.prizes{
+  background-color: var(--green);
+  border-top: 0.75rem solid rgba(0,0,0,0.1);
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.1);
+}
+
+main section:nth-child(2) article{
+  border: 0.25rem dashed var(--yellow);
+  text-align: center;
+  width:auto;
+  height: auto;
+  padding:1.5rem;
+  margin: 1.5rem;
+}
+
+main section:nth-child(2) img{
+  width:100%;
+  height: auto;
+}
+
+.apply{
+  background-color: var(--blue);
+  border-top: 0.75rem solid rgba(0,0,0,0.1);
+  border-bottom: 0.75rem solid rgba(0, 0, 0, 0.1);
+}
+
+main section:last-child div{
+  max-width:750px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+main section:last-child img {
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+input{
+  width:auto;
+  height: 5rem;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--orange);
+  font-size: 2rem;
+  font-family:Atma, sans-serif;
+  color:white;
+}
+
+::placeholder{
+  color:white;
+}
+
+button{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width:50%;
+  height: 6rem;
+  border:none;
+  border-radius: 15px;
+  background-color: var(--yellow);
+  font-size: 1.75rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  background-color: var(--yellow);
+  border-top: 0.75rem solid rgba(0,0,0,0.1);
+}
+
+
 @media (min-width: 640px) {
+.grid {
+  width:auto;
+  height: auto;
+  margin-left: 2rem;
+  margin-right:2rem;
+  margin-bottom: 3rem;
+  gap:1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a{
+  display: inline-block;
+  transition: 0.4s;
+}
+
+li:nth-child(2n) a:hover {
+    transform: scale(1.2) rotate(-10deg);
+}
+li:nth-child(2n+1) a:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+main section:first-child article:hover{
+  background-color: var(--yellow);
+  transition: 0.4s;
+}
+
+main section:nth-child(2) img:hover{
+  transform: rotate(360deg);
+  transition: 0.6s;
+}
+
+button:hover{
+  background-color: var(--green);
+  transition: 0.4s;
+}
 }
